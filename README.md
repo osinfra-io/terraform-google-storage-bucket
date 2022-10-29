@@ -1,4 +1,4 @@
-# <img align="left" width="45" height="45" src="https://user-images.githubusercontent.com/1610100/195462632-f70a64d6-7811-4da3-aa82-c65cbbb74754.png"> Google Cloud Platform - Terraform Project Module
+# <img align="left" width="45" height="45" src="https://user-images.githubusercontent.com/1610100/198844818-02e68cb6-f6cc-4747-bf38-cd458a133628.png"> Google Cloud Platform - Storage Bucket Terraform Module
 
 **[GitHub Actions](https://github.com/osinfra-io/terraform-google-project/actions):**
 
