@@ -1,0 +1,26 @@
+# Test Kitchen
+# https://docs.chef.io/workstation/config_yml_kitchen
+
+driver:
+  name: terraform
+
+provisioner:
+  name: terraform
+
+verifier:
+  name: terraform
+
+platforms:
+  - name: gcp
+
+suites:
+  - name: default_bucket
+    driver:
+      root_module_directory: test/fixtures/default_bucket
+    verifier:
+      color: true
+      systems:
+        - name: inspec_gcp
+          backend: gcp
+          controls:
+            - storage_bucket

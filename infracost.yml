@@ -1,0 +1,9 @@
+# Infracost Config File
+# https://www.infracost.io/docs/features/config_file
+
+version: 0.1
+
+projects:
+  - name: "Google Cloud Storage Bucket Module - Default"
+    path: test/fixtures/default_bucket
+    usage_file: test/fixtures/default_bucket/infracost-usage.yml
