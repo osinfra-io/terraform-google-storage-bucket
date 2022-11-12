@@ -9,7 +9,7 @@ resource "google_storage_bucket" "this" {
   dynamic "encryption" {
     for_each = var.default_kms_key_name == null ? [] : [var.default_kms_key_name]
     content {
-      default_kms_key_name = default_kms_key_name.value
+      default_kms_key_name = encryption.value
     }
   }
 
