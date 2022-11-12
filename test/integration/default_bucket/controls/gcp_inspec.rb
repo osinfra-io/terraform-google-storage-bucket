@@ -13,6 +13,9 @@ control 'storage_bucket' do
 
   describe google_storage_bucket(name: bucket_name) do
     it { should exist }
+    its('encryption.default_kms_key_name') do
+      should eq nil
+    end
     its('location') { should eq 'US' }
     its('storage_class') { should eq 'STANDARD' }
     its('versioning.enabled') { should eq true }

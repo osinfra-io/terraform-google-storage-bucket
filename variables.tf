@@ -1,6 +1,12 @@
 # Input Variables
 # https://www.terraform.io/language/values/variables
 
+variable "default_kms_key_name" {
+  description = "The name of the Cloud KMS key that will be used to encrypt objects inserted into this bucket"
+  type        = string
+  default     = null
+}
+
 variable "force_destroy" {
   description = "When deleting a bucket, this boolean option will delete all contained objects"
   type        = bool
@@ -22,7 +28,7 @@ variable "name" {
   description = "The suffix to use for the storage bucket name"
 }
 
-variable "project_id" {
+variable "project" {
   description = "The ID of the project in which the resource belongs"
   type        = string
 }

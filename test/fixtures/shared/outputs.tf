@@ -5,6 +5,6 @@ output "bucket_name" {
   value = module.storage_bucket.name
 }
 
-output "project_id" {
-  value = module.storage_bucket.project_id
+output "project" {
+  value = module.storage_bucket.project
 }
