@@ -6,9 +6,9 @@ output "name" {
   value       = google_storage_bucket.this.name
 }
 
-output "project_id" {
+output "project" {
   description = "The ID of the project in which the resource belongs"
-  value       = var.project_id
+  value       = var.project
 }
 
 output "url" {

@@ -5,7 +5,7 @@ module "storage_bucket" {
 
   source = "../../../"
 
-  location   = "US"
-  name       = "test"
-  project_id = "devops-testing-tf67de-sb"
+  location = "US"
+  name     = "test"
+  project  = "devops-testing-tf67de-sb"
 }

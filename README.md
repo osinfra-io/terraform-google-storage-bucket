@@ -52,7 +52,7 @@ A child module automatically inherits its parent's default (un-aliased) provider
 |------|-------------|------|---------|:--------:|
 | <a name="input_location"></a> [location](#input_location) | The location the storage bucket will be created in | `string` | n/a | yes |
 | <a name="input_name"></a> [name](#input_name) | The suffix to use for the storage bucket name | `any` | n/a | yes |
-| <a name="input_project_id"></a> [project_id](#input_project_id) | The ID of the project in which the resource belongs | `string` | n/a | yes |
+| <a name="input_project"></a> [project](#input_project) | The ID of the project in which the resource belongs | `string` | n/a | yes |
 | <a name="input_default_kms_key_name"></a> [default_kms_key_name](#input_default_kms_key_name) | The name of the Cloud KMS key that will be used to encrypt objects inserted into this bucket | `string` | `null` | no |
 | <a name="input_force_destroy"></a> [force_destroy](#input_force_destroy) | When deleting a bucket, this boolean option will delete all contained objects | `bool` | `false` | no |
 | <a name="input_labels"></a> [labels](#input_labels) | A map of labels to add to all resources | `map(string)` | `null` | no |
@@ -64,7 +64,7 @@ A child module automatically inherits its parent's default (un-aliased) provider
 | Name | Description |
 |------|-------------|
 | <a name="output_name"></a> [name](#output_name) | Bucket name |
-| <a name="output_project_id"></a> [project_id](#output_project_id) | The ID of the project in which the resource belongs |
+| <a name="output_project"></a> [project](#output_project) | The ID of the project in which the resource belongs |
 | <a name="output_url"></a> [url](#output_url) | Bucket URL |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
