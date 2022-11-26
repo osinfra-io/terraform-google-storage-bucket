@@ -3,8 +3,10 @@
 
 version: 2
 updates:
+  - package-ecosystem: github-actions
 
-  - package-ecosystem: "github-actions"
-    directory: "/"
+    # NOTE: The "/" here is for checking for workflow files in .github/workflows
+
+    directory: /
     schedule:
-      interval: "daily"
+      interval: daily

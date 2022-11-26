@@ -7,5 +7,5 @@ module "storage_bucket" {
 
   location = "US"
   name     = "test"
-  project  = "devops-testing-tf67de-sb"
+  project  = "shared-kitchen-tf06c8-sb"
 }
