@@ -7,7 +7,7 @@ terraform {
   # https://www.terraform.io/language/settings/backends/gcs
 
   backend "gcs" {
-    bucket = "shared-terraform-tf412f-sb-testing"
+    bucket = "shared-terraform-tf412f-sb-kitchen"
     prefix = "terraform-google-storage-bucket"
   }
 }
