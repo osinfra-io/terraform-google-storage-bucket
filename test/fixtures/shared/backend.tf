@@ -7,6 +7,7 @@ terraform {
   # https://www.terraform.io/language/settings/backends/gcs
 
   backend "gcs" {
-    bucket = "terraform-child-modules-github-actions-state"
+    bucket = "shared-terraform-tf412f-sb-testing"
+    prefix = "terraform-google-storage-bucket"
   }
 }
