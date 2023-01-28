@@ -25,7 +25,7 @@ variable "location" {
 }
 
 variable "name" {
-  description = "The suffix to use for the storage bucket name"
+  description = "The name of the storage bucket"
 }
 
 variable "project" {
