@@ -1,11 +1,15 @@
 module "storage_bucket" {
 
   # This module will be consumed using the source address of the github repo and not the "../../../" used in this test.
-  # source = "git@github.com:osinfra-io/terraform-google-storage-bucket?ref=v0.0.0"
+  # source = "github.com/osinfra-io/terraform-google-storage-bucket?ref=v0.0.0"
 
   source = "../../../"
 
   location = "US"
-  name     = "test"
-  project  = "shared-kitchen-tf06c8-sb"
+  name     = random_id.bucket_name.hex
+  project  = "temp-bootstrap-99"
+}
+
+resource "random_id" "bucket_name" {
+  byte_length = 5
 }

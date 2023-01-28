@@ -4,6 +4,6 @@
 version: 0.1
 
 projects:
-  - name: "Google Cloud Storage Bucket Module - Default"
+  - name: "terraform-google-storage-bucket - Default Bucket"
     path: test/fixtures/default_bucket
     usage_file: test/fixtures/default_bucket/infracost-usage.yml

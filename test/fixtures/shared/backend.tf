@@ -6,8 +6,8 @@ terraform {
   # Google Cloud Storage
   # https://www.terraform.io/language/settings/backends/gcs
 
-  backend "gcs" {
-    bucket = "shared-terraform-tf412f-sb-kitchen"
-    prefix = "terraform-google-storage-bucket"
-  }
+  # backend "gcs" {
+  #   bucket = ""
+  #   prefix = "terraform-google-storage-bucket"
+  # }
 }
