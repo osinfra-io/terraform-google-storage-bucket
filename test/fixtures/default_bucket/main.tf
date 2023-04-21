@@ -7,10 +7,7 @@ module "storage_bucket" {
 
   location = "US"
   name     = random_id.bucket_name.hex
-
-  # Update this project when testing infrastructure is created
-
-  project = "testing-workflow-tff8-sb"
+  project = "testing-kitchen-tf11-sb"
 }
 
 resource "random_id" "bucket_name" {
