@@ -2,7 +2,7 @@
 
 **[GitHub Actions](https://github.com/osinfra-io/terraform-google-storage-bucket/actions):**
 
-[![Dependabot](https://github.com/osinfra-io/terraform-google-storage-bucket/actions/workflows/dependabot.yml/badge.svg)](https://github.com/osinfra-io/terraform-google-storage-bucket/actions/workflows/dependabot.yml)
+[![Kitchen Tests](https://github.com/osinfra-io/terraform-google-storage-bucket/actions/workflows/kitchen.yml/badge.svg)](https://github.com/osinfra-io/terraform-google-storage-bucket/actions/workflows/kitchen.yml) [![Dependabot](https://github.com/osinfra-io/terraform-google-storage-bucket/actions/workflows/dependabot.yml/badge.svg)](https://github.com/osinfra-io/terraform-google-storage-bucket/actions/workflows/dependabot.yml)
 
 **[Infracost](https://www.infracost.io):**
 
