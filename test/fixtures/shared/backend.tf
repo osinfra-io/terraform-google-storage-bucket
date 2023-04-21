@@ -6,8 +6,7 @@ terraform {
   # Google Cloud Storage
   # https://www.terraform.io/language/settings/backends/gcs
 
-  # backend "gcs" {
-  #   bucket = ""
-  #   prefix = "terraform-google-storage-bucket"
-  # }
+  backend "gcs" {
+    bucket = "plt-lz-testing-2c8b-sb"
+  }
 }
