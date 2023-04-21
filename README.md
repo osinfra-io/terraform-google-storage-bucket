@@ -40,10 +40,8 @@ See the documentation for setting up a local development environment [here](http
 
 ### Tools
 
-- [checkov](https://github.com/bridgecrewio/checkov)
-- [chef-inspec](https://github.com/inspec/inspec)
 - [infracost](https://github.com/infracost/infracost)
-- [inspec-gcp](https://github.com/inspec/inspec-gcp)
+- [inspec](https://github.com/inspec/inspec)
 - [kitchen-terraform](https://github.com/newcontext-oss/kitchen-terraform)
 - [pre-commit](https://github.com/pre-commit/pre-commit)
 - [pre-commit-terraform](https://github.com/antonbabenko/pre-commit-terraform)
@@ -72,7 +70,7 @@ A child module automatically inherits its parent's default (un-aliased) provider
 
 | Name | Version |
 |------|---------|
-| <a name="provider_google"></a> [google](#provider_google) | 4.50.0 |
+| <a name="provider_google"></a> [google](#provider_google) | 4.62.1 |
 
 ### Resources
 

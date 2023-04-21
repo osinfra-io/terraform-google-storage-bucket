@@ -3,7 +3,7 @@
 
 resource "google_storage_bucket" "this" {
 
-  # checkov:skip=CKV_GCP_62: In most cases, Cloud Audit Logs is the recommended method for generating logs that track API operations
+  # In most cases, Cloud Audit Logs is the recommended method for generating logs that track API operations
   # performed in Cloud Storage.
 
   dynamic "encryption" {
