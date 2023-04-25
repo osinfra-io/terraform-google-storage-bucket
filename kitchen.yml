@@ -4,21 +4,24 @@
 driver:
   name: terraform
 
+platforms:
+  - name: gcp
+
 provisioner:
+  name: terraform
+
+transport:
   name: terraform
 
 verifier:
   name: terraform
-
-platforms:
-  - name: gcp
+  color: true
 
 suites:
   - name: default_bucket
-    driver:
+    transport:
       root_module_directory: test/fixtures/default_bucket
     verifier:
-      color: true
       systems:
         - name: inspec_gcp
           backend: gcp
