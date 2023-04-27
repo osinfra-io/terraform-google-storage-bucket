@@ -10,7 +10,7 @@
 
 Monthly cost estimates for this module based off these usage values: [Default Bucket](test/fixtures/default_bucket/infracost-usage.yml)
 
-Terraform **example** module for a Google Cloud Platform project.
+Terraform **example** module for a Google Cloud Platform storage bucket.
 
 *We do not recommend consuming this module like you might a [public module](https://registry.terraform.io/browse/modules). Its purpose is to be a baseline, something you can fork and potentially maintain on your own and modify to fit your organization's needs. Using public modules vs. writing your own have various [drivers and trade-offs](https://github.com/orgs/osinfra-io/discussions/3) that your organization should evaluate.*
 
@@ -51,7 +51,7 @@ See the documentation for setting up a local development environment [here](http
 
 Links to documentation and other resources required to develop and iterate in this repository successfully.
 
-- [Google Cloud storage bucket](https://cloud.google.com/storage/docs/buckets)
+- [storage bucket](https://cloud.google.com/storage/docs/buckets)
 
 ### Tests
 
