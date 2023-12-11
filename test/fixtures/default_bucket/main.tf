@@ -14,7 +14,7 @@ module "storage_bucket" {
 
   location = "US"
   name     = random_id.bucket_name.hex
-  project  = "testing-kitchen-tf11-sb"
+  project  = "testing-kitchen-tfbd-sb"
 }
 
 resource "random_id" "bucket_name" {
