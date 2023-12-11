@@ -5,9 +5,16 @@ module "storage_bucket" {
 
   source = "../../../"
 
+  cost_center = "x000"
+
+  labels = {
+    env  = "sb"
+    team = "testing"
+  }
+
   location = "US"
   name     = random_id.bucket_name.hex
-  project = "testing-kitchen-tf11-sb"
+  project  = "testing-kitchen-tfbd-sb"
 }
 
 resource "random_id" "bucket_name" {

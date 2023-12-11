@@ -6,9 +6,11 @@
 
 **[Infracost](https://www.infracost.io):**
 
-[![infracost](https://img.shields.io/endpoint?label=Default%20Bucket&url=https://dashboard.api.infracost.io/shields/json/cbeecfe3-576f-4553-984c-e451a575ee47/repos/00c5bd62-c59f-44f6-8583-5632a43182fd/branch/65062ab7-4e16-4e82-ba22-22c03a84f6fc)](https://dashboard.infracost.io/org/osinfra-io/repos/00c5bd62-c59f-44f6-8583-5632a43182fd)
+[![infracost](https://img.shields.io/endpoint?label=default_bucket&url=https://dashboard.api.infracost.io/shields/json/cbeecfe3-576f-4553-984c-e451a575ee47/repos/00c5bd62-c59f-44f6-8583-5632a43182fd/branch/65062ab7-4e16-4e82-ba22-22c03a84f6fc/default_bucket)](https://dashboard.infracost.io/org/osinfra-io/repos/00c5bd62-c59f-44f6-8583-5632a43182fd?tab=settings)
 
-Monthly cost estimates for this module based on these usage values: [Default Bucket](test/fixtures/default_bucket/infracost-usage.yml)
+Monthly cost estimates for this module based on these usage values:
+
+- [default_bucket](test/fixtures/default_bucket/infracost-usage.yml)
 
 ## Repository Description
 
@@ -26,9 +28,10 @@ Here is an example of a basic configuration:
 module "storage_bucket" {
   source   = "github.com/osinfra-io/terraform-google-storage-bucket?ref=v0.0.0"
 
-  location   = "us-east1"
-  name       = "example-tf34k"
-  project_id = "example-project"
+  cost_center = "x000"
+  location    = "us-east1"
+  name        = "example-tf34k"
+  project_id  = "example-project"
 }
 ```
 
@@ -80,7 +83,7 @@ A child module automatically inherits its parent's default (un-aliased) provider
 
 | Name | Version |
 |------|---------|
-| <a name="provider_google"></a> [google](#provider_google) | 4.62.1 |
+| <a name="provider_google"></a> [google](#provider_google) | 5.8.0 |
 
 ### Resources
 
@@ -92,12 +95,13 @@ A child module automatically inherits its parent's default (un-aliased) provider
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
+| <a name="input_cost_center"></a> [cost_center](#input_cost_center) | The cost center to use for resource labels | `string` | n/a | yes |
 | <a name="input_location"></a> [location](#input_location) | The location the storage bucket will be created in | `string` | n/a | yes |
 | <a name="input_name"></a> [name](#input_name) | The name of the storage bucket | `any` | n/a | yes |
 | <a name="input_project"></a> [project](#input_project) | The ID of the project in which the resource belongs | `string` | n/a | yes |
 | <a name="input_default_kms_key_name"></a> [default_kms_key_name](#input_default_kms_key_name) | The name of the Cloud KMS key that will be used to encrypt objects inserted into this bucket | `string` | `null` | no |
 | <a name="input_force_destroy"></a> [force_destroy](#input_force_destroy) | When deleting a bucket, this boolean option will delete all contained objects | `bool` | `false` | no |
-| <a name="input_labels"></a> [labels](#input_labels) | A map of labels to add to all resources | `map(string)` | `null` | no |
+| <a name="input_labels"></a> [labels](#input_labels) | A map of key/value pairs to assign to the resources being created | `map(string)` | `{}` | no |
 | <a name="input_storage_class"></a> [storage_class](#input_storage_class) | The Storage Class of the new bucket. Supported values include: STANDARD, MULTI_REGIONAL, REGIONAL, NEARLINE, COLDLINE, ARCHIVE | `string` | `"STANDARD"` | no |
 | <a name="input_versioning"></a> [versioning](#input_versioning) | The bucket's Versioning configuration | `bool` | `true` | no |
 

@@ -1,6 +1,11 @@
 # Input Variables
 # https://www.terraform.io/language/values/variables
 
+variable "cost_center" {
+  description = "The cost center to use for resource labels"
+  type        = string
+}
+
 variable "default_kms_key_name" {
   description = "The name of the Cloud KMS key that will be used to encrypt objects inserted into this bucket"
   type        = string
@@ -14,9 +19,9 @@ variable "force_destroy" {
 }
 
 variable "labels" {
-  description = "A map of labels to add to all resources"
+  description = "A map of key/value pairs to assign to the resources being created"
   type        = map(string)
-  default     = null
+  default     = {}
 }
 
 variable "location" {
