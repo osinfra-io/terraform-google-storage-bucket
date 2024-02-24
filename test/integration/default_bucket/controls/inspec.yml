@@ -1,7 +1,7 @@
 # Chef Inspec
 # https://docs.chef.io/inspec/profiles/#inspecyml
 
-name: default_bucket
+name: InSpec GCP (Google Cloud Platform) Resource Pack
 
 # Profile Dependencies
 # https://docs.chef.io/inspec/profiles/#profile-dependencies
@@ -10,4 +10,4 @@ name: default_bucket
 
 depends:
   - name: inspec_gcp
-    url: https://github.com/inspec/inspec-gcp/archive/v1.10.39.tar.gz
+    url: https://github.com/inspec/inspec-gcp/archive/v1.11.93.tar.gz
