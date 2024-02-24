@@ -8,13 +8,14 @@ module "storage_bucket" {
   cost_center = "x000"
 
   labels = {
-    env  = "sb"
-    team = "testing"
+    env        = "sb"
+    repository = "terraform-google-storage-bucket"
+    team       = "testing"
   }
 
   location = "US"
   name     = random_id.bucket_name.hex
-  project  = "testing-kitchen-tfbd-sb"
+  project  = var.project_id
 }
 
 resource "random_id" "bucket_name" {
