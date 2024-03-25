@@ -15,7 +15,7 @@ module "storage_bucket" {
 
   location = "US"
   name     = random_id.bucket_name.hex
-  project  = var.project_id
+  project  = var.project
 }
 
 resource "random_id" "bucket_name" {
