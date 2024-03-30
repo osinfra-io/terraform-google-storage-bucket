@@ -8,9 +8,7 @@
 
 [![infracost](https://img.shields.io/endpoint?label=default_bucket&url=https://dashboard.api.infracost.io/shields/json/cbeecfe3-576f-4553-984c-e451a575ee47/repos/00c5bd62-c59f-44f6-8583-5632a43182fd/branch/65062ab7-4e16-4e82-ba22-22c03a84f6fc/default_bucket)](https://dashboard.infracost.io/org/osinfra-io/repos/00c5bd62-c59f-44f6-8583-5632a43182fd?tab=settings)
 
-Monthly cost estimates for this module based on these usage values:
-
-- [default_bucket](test/fixtures/default_bucket/infracost-usage.yml)
+💵 Monthly estimates based on Infracost baseline costs.
 
 ## Repository Description
 
@@ -23,19 +21,6 @@ Terraform **example** module for a Google Cloud Platform storage bucket.
 
 > [!TIP]
 > You can check the [test/fixtures](test/fixtures/) directory for example configurations. These fixtures set up the system for testing by providing all the necessary initial code, thus creating good examples to base your configurations.
-
-Here is an example of a basic configuration:
-
-```hcl
-module "storage_bucket" {
-  source   = "github.com/osinfra-io/terraform-google-storage-bucket?ref=v0.0.0"
-
-  cost_center = "x000"
-  location    = "us-east1"
-  name        = "example-tf34k"
-  project_id  = "example-project"
-}
-```
 
 ## <img align="left" width="35" height="35" src="https://github.com/osinfra-io/github-organization-management/assets/1610100/39d6ae3b-ccc2-42db-92f1-276a5bc54e65"> Development
 
