@@ -5,12 +5,11 @@ module "storage_bucket" {
 
   source = "../../../"
 
-  cost_center = "x000"
-
   labels = {
-    env        = "sb"
-    repository = "terraform-google-storage-bucket"
-    team       = "testing"
+    cost-center = "x000"
+    env         = "sb"
+    repository  = "terraform-google-storage-bucket"
+    team        = "testing"
   }
 
   location = "US"

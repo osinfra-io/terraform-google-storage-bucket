@@ -72,11 +72,19 @@ bundle exec kitchen destroy
 A child module automatically inherits its parent's default (un-aliased) provider configurations. The provider versions below are informational only and do **not** need to align with the provider configurations from their parent.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+### Requirements
+
+No requirements.
+
 ### Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_google"></a> [google](#provider_google) | 5.8.0 |
+| <a name="provider_google"></a> [google](#provider\_google) | 5.22.0 |
+
+### Modules
+
+No modules.
 
 ### Resources
 
@@ -88,21 +96,20 @@ A child module automatically inherits its parent's default (un-aliased) provider
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_cost_center"></a> [cost_center](#input_cost_center) | The cost center to use for resource labels | `string` | n/a | yes |
-| <a name="input_location"></a> [location](#input_location) | The location the storage bucket will be created in | `string` | n/a | yes |
-| <a name="input_name"></a> [name](#input_name) | The name of the storage bucket | `any` | n/a | yes |
-| <a name="input_project"></a> [project](#input_project) | The ID of the project in which the resource belongs | `string` | n/a | yes |
-| <a name="input_default_kms_key_name"></a> [default_kms_key_name](#input_default_kms_key_name) | The name of the Cloud KMS key that will be used to encrypt objects inserted into this bucket | `string` | `null` | no |
-| <a name="input_force_destroy"></a> [force_destroy](#input_force_destroy) | When deleting a bucket, this boolean option will delete all contained objects | `bool` | `false` | no |
-| <a name="input_labels"></a> [labels](#input_labels) | A map of key/value pairs to assign to the resources being created | `map(string)` | `{}` | no |
-| <a name="input_storage_class"></a> [storage_class](#input_storage_class) | The Storage Class of the new bucket. Supported values include: STANDARD, MULTI_REGIONAL, REGIONAL, NEARLINE, COLDLINE, ARCHIVE | `string` | `"STANDARD"` | no |
-| <a name="input_versioning"></a> [versioning](#input_versioning) | The bucket's Versioning configuration | `bool` | `true` | no |
+| <a name="input_default_kms_key_name"></a> [default\_kms\_key\_name](#input\_default\_kms\_key\_name) | The name of the Cloud KMS key that will be used to encrypt objects inserted into this bucket | `string` | `null` | no |
+| <a name="input_force_destroy"></a> [force\_destroy](#input\_force\_destroy) | When deleting a bucket, this boolean option will delete all contained objects | `bool` | `false` | no |
+| <a name="input_labels"></a> [labels](#input\_labels) | A map of key/value pairs to assign to the resources being created | `map(string)` | `{}` | no |
+| <a name="input_location"></a> [location](#input\_location) | The location the storage bucket will be created in | `string` | n/a | yes |
+| <a name="input_name"></a> [name](#input\_name) | The name of the storage bucket | `any` | n/a | yes |
+| <a name="input_project"></a> [project](#input\_project) | The ID of the project in which the resource belongs | `string` | n/a | yes |
+| <a name="input_storage_class"></a> [storage\_class](#input\_storage\_class) | The Storage Class of the new bucket. Supported values include: STANDARD, MULTI\_REGIONAL, REGIONAL, NEARLINE, COLDLINE, ARCHIVE | `string` | `"STANDARD"` | no |
+| <a name="input_versioning"></a> [versioning](#input\_versioning) | The bucket's Versioning configuration | `bool` | `true` | no |
 
 ### Outputs
 
 | Name | Description |
 |------|-------------|
-| <a name="output_name"></a> [name](#output_name) | Bucket name |
-| <a name="output_project"></a> [project](#output_project) | The ID of the project in which the resource belongs |
-| <a name="output_url"></a> [url](#output_url) | Bucket URL |
+| <a name="output_name"></a> [name](#output\_name) | Bucket name |
+| <a name="output_project"></a> [project](#output\_project) | The ID of the project in which the resource belongs |
+| <a name="output_url"></a> [url](#output\_url) | Bucket URL |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
