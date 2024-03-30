@@ -14,7 +14,7 @@ resource "google_storage_bucket" "this" {
   }
 
   force_destroy = var.force_destroy
-  labels        = local.labels
+  labels        = var.labels
   location      = var.location
   name          = var.name
   project       = var.project
