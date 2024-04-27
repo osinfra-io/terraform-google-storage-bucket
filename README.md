@@ -74,7 +74,7 @@ No requirements.
 
 | Name | Version |
 |------|---------|
-| <a name="provider_google"></a> [google](#provider\_google) | 5.8.0 |
+| <a name="provider_google"></a> [google](#provider\_google) | 5.26.0 |
 
 ### Modules
 
