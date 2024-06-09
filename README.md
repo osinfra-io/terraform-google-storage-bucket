@@ -74,7 +74,7 @@ No requirements.
 
 | Name | Version |
 |------|---------|
-| <a name="provider_google"></a> [google](#provider\_google) | 5.26.0 |
+| <a name="provider_google"></a> [google](#provider\_google) | 5.32.0 |
 
 ### Modules
 
@@ -96,6 +96,7 @@ No modules.
 | <a name="input_location"></a> [location](#input\_location) | The location the storage bucket will be created in | `string` | n/a | yes |
 | <a name="input_name"></a> [name](#input\_name) | The name of the storage bucket | `any` | n/a | yes |
 | <a name="input_project"></a> [project](#input\_project) | The ID of the project in which the resource belongs | `string` | n/a | yes |
+| <a name="input_public_access_prevention"></a> [public\_access\_prevention](#input\_public\_access\_prevention) | The public access prevention configuration for the bucket | `string` | `"enforced"` | no |
 | <a name="input_storage_class"></a> [storage\_class](#input\_storage\_class) | The Storage Class of the new bucket. Supported values include: STANDARD, MULTI\_REGIONAL, REGIONAL, NEARLINE, COLDLINE, ARCHIVE | `string` | `"STANDARD"` | no |
 | <a name="input_versioning"></a> [versioning](#input\_versioning) | The bucket's Versioning configuration | `bool` | `true` | no |
 
