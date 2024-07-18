@@ -34,6 +34,7 @@ See the documentation for setting up a local development environment [here](http
 
 ### 🛠️ Tools
 
+- [checkov](https://github.com/bridgecrewio/checkov)
 - [infracost](https://github.com/infracost/infracost)
 - [pre-commit](https://github.com/pre-commit/pre-commit)
 - [pre-commit-terraform](https://github.com/antonbabenko/pre-commit-terraform)
@@ -63,7 +64,7 @@ terraform test
 
 ## 📓 Terraform Documentation
 
-A child module automatically inherits its parent's default (un-aliased) provider configurations. The provider versions below are informational only and do **not** need to align with the provider configurations from their parent.
+> A child module automatically inherits default (un-aliased) provider configurations from its parent. The provider versions below are informational only and do **not** need to align with the provider configurations from its parent.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ### Requirements
@@ -74,7 +75,7 @@ No requirements.
 
 | Name | Version |
 |------|---------|
-| <a name="provider_google"></a> [google](#provider\_google) | 5.32.0 |
+| <a name="provider_google"></a> [google](#provider\_google) | 5.38.0 |
 
 ### Modules
 
