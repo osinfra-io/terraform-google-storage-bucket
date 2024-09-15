@@ -28,15 +28,15 @@ variable "name" {
   description = "The name of the storage bucket"
 }
 
+variable "project" {
+  description = "The ID of the project in which the resource belongs"
+  type        = string
+}
+
 variable "public_access_prevention" {
   description = "The public access prevention configuration for the bucket"
   type        = string
   default     = "enforced"
-}
-
-variable "project" {
-  description = "The ID of the project in which the resource belongs"
-  type        = string
 }
 
 variable "storage_class" {
