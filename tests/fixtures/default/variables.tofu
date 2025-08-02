@@ -1,5 +1,5 @@
-# Terraform Input Variables
-# https://www.terraform.io/language/values/variables
+# Input Variables
+# https://opentofu.org/docs/language/values/variables
 
 variable "environment" {
   type = string
