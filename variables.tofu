@@ -1,5 +1,5 @@
 # Input Variables
-# https://www.terraform.io/language/values/variables
+# https://opentofu.org/docs/language/values/variables
 
 variable "default_kms_key_name" {
   description = "The name of the Cloud KMS key that will be used to encrypt objects inserted into this bucket"

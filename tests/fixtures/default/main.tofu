@@ -1,3 +1,6 @@
+# Required Providers
+# https://opentofu.org/docs/language/providers/requirements
+
 terraform {
   required_providers {
     google = {
@@ -9,7 +12,10 @@ terraform {
 module "storage_bucket" {
   source = "../../../"
 
-  labels   = local.labels
+  labels = {
+    "mock-key" = "mock-value"
+  }
+
   location = "US"
   name     = random_id.bucket_name.hex
   project  = var.project

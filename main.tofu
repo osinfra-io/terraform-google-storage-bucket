@@ -1,11 +1,7 @@
 # Google Storage Bucket Resource
-# https://registry.terraform.io/providers/hashicorp/google/latest/docs/resources/storage_bucket
+# https://search.opentofu.org/provider/hashicorp/google/latest/docs/resources/storage_bucket
 
 resource "google_storage_bucket" "this" {
-
-  # Bucket should log access
-  # checkov:skip=CKV_GCP_62: In most cases, Cloud Audit Logs is the recommended method for generating logs that track API operations
-  # performed in Cloud Storage.
 
   dynamic "encryption" {
     for_each = var.default_kms_key_name == null ? [] : [var.default_kms_key_name]
